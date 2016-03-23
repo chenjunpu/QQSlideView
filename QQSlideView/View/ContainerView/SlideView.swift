@@ -62,7 +62,7 @@ extension SlideView{
         let bw: CGFloat = 270
         let bh: CGFloat  = 60
         let headBtn = UIButton(frame: CGRect(x: bx, y: by, width: bw, height: bh))
-        headBtn.addTarget(self, action: "changeToUserInfo", forControlEvents: .TouchUpInside)
+        headBtn.addTarget(self, action: #selector(SlideView.changeToUserInfo), forControlEvents: .TouchUpInside)
         
 //        user icon
         let ix: CGFloat = 0

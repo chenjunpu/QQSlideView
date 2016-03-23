@@ -34,7 +34,7 @@ class MainViewController: UIViewController {
         setupUI()
         
 //        addObserver to change Navigation title
-        NSNotificationCenter.defaultCenter().addObserver(self, selector: "changNavTitle:", name: "changeTitle", object: nil)
+        NSNotificationCenter.defaultCenter().addObserver(self, selector: #selector(MainViewController.changNavTitle(_:)), name: "changeTitle", object: nil)
 
     }
 
@@ -95,7 +95,7 @@ extension MainViewController{
     
     private func addRecognizer(){
         
-        let pan: UIPanGestureRecognizer = UIPanGestureRecognizer(target: self, action: "panEvent:")
+        let pan: UIPanGestureRecognizer = UIPanGestureRecognizer(target: self, action: #selector(MainViewController.panEvent(_:)))
         
         self.view.addGestureRecognizer(pan)
     }
