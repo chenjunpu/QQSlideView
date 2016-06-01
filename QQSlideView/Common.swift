@@ -10,5 +10,3 @@ import UIKit
 
 let jc_sWidth = UIScreen.mainScreen().bounds.size.width
 let jc_sHeight = UIScreen.mainScreen().bounds.size.height
-
-let Height = UIScreen.mainScreen().bounds.size.height
